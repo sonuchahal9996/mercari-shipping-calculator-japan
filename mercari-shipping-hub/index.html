@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">【2026年最新】ゆうゆうメルカリ便・送料＆サイズ利益計算ツール｜発送方法・お届け日数・箱を完全比較</title>
+    <meta name="description" content="【登録不要・完全無料】ゆうゆうメルカリ便とらくらくメルカリ便の送料、サイズ、発送方法（ローソン・郵便局・ポスト投函）、お届け日数、箱代、販売利益（10%手数料天引き）を1秒自動計算。土日配達・追跡対応・赤字警告機能つき。">
+    <link rel="canonical" href="https://furimaship.com/">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="manifest" href="manifest.json">
+    <link rel="search" type="application/opensearchdescription+xml" title="フリマ送料Navi" href="opensearch.xml">
+
+    <!-- Mobile PWA Meta Tags -->
+    <meta name="theme-color" content="#f43f5e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="送料Navi">
+    <link rel="apple-touch-icon" href="favicon.svg">
+
+    <!-- Open Graph for Japanese Social & LINE Previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="【2026年最新】ゆうゆうメルカリ便・送料＆サイズ利益計算ツール｜発送方法・日数・箱を完全比較">
+    <meta property="og:description" content="販売価格を入れるだけ！ゆうゆうメルカリ便とらくらくメルカリ便の送料・箱代・10%手数料を自動計算し、手元の純利益と最安発送を1秒判定。">
+    <meta property="og:url" content="https://furimaship.com/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Master Unified Knowledge Graph Schema (@graph with Official Citations) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://furimaship.com/#website",
+          "url": "https://furimaship.com/",
+          "name": "フリマ送料Navi (FurimaShip)",
+          "description": "メルカリ送料・サイズ・販売利益計算シミュレーター",
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["#ai-summary-text"]
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://furimaship.com/#webpage",
+          "url": "https://furimaship.com/",
+          "name": "【2026年最新】ゆうゆうメルカリ便・送料＆サイズ利益計算ツール｜発送方法・お届け日数・箱を完全比較",
+          "isPartOf": { "@id": "https://furimaship.com/#website" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://furimaship.com/#app",
+          "name": "ゆうゆうメルカリ便・送料サイズ利益計算ツール",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "All",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "JPY"
+          },
+          "isBasedOn": [
+            "https://www.post.japanpost.jp/service/you_pack/",
+            "https://www.kuronekoyamato.co.jp/"
+          ],
+          "citation": "日本郵便株式会社およびヤマト運輸株式会社 公式配送料金改定基準準拠",
+          "isPartOf": { "@id": "https://furimaship.com/#webpage" }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://furimaship.com/#faq",
+          "isPartOf": { "@id": "https://furimaship.com/#webpage" },
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "ゆうゆうメルカリ便とは何ですか？らくらくメルカリ便との違いは？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ゆうゆうメルカリ便は日本郵便（郵便局・ローソン・郵便ポスト）を利用するメルカリ公式配送サービスです。ヤマト運輸のらくらくメルカリ便との主な違いは、発送場所（ローソン・郵便ポスト vs セブン・ファミマ）、対応サイズ（ゆうパケットプラス厚さ7cm vs 宅急便コンパクト厚さ5cm）、受取場所（コンビニ・郵便局受取対応）です。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "ゆうゆうメルカリ便は土日や祝日も配達されますか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "はい。ゆうゆうメルカリ便（ゆうパケット、ゆうパケットポスト、ゆうパケットプラス、ゆうパック）は土日・祝日も毎日配達されます。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "ゆうゆうメルカリ便は発送から何日で届きますか？（お届け日数と追跡）",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "発送手続き完了後、おおむね1〜3日で配達されます（近隣地域であれば翌日〜翌々日）。メルカリアプリの取引画面から24時間リアルタイムで追跡状況を確認でき、匿名配送および紛失補償サポートが付いています。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "ローソンからの送り方と郵便ポスト投函（ゆうパケットポスト）の違いは？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ローソンからはLoppiやスマリボックスで伝票を出して発送します。一方、ゆうパケットポストは専用シールの二次元コードをアプリで読み取り、街の郵便ポストに投函するだけで完了するため、レジに並ぶ手間がなく最も手軽です。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "ゆうパケットプラスの箱はどこで買えますか？再利用はできますか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ゆうパケットプラス専用箱（1個65円）は郵便局やローソンで購入できます。破損や変形がなくサイズ規格内であれば再利用して発送することも認められています。"
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        @media print {
+            header, nav, footer, button, #dwellChips, #lineShareBtn, #carrierTabs, #pwaInstallPrompt { display: none !important; }
+            body { background: white !important; color: black !important; }
+            .print-card { border: 1px solid #ccc !important; box-shadow: none !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+    <div>
+        <!-- Navbar -->
+        <header class="border-b border-slate-200 bg-white sticky top-0 z-30 shadow-xs">
+            <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center gap-3">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-rose-500 flex items-center justify-center text-white font-black text-sm">箱</div>
+                    <span class="font-extrabold text-xl tracking-tight text-slate-900">フリマ<span class="text-rose-500">送料Navi</span></span>
+                    <span class="text-[11px] bg-rose-50 text-rose-600 font-bold px-2 py-0.5 rounded border border-rose-200">2026年メルカリ最新版</span>
+                </a>
+                
+                <div class="flex items-center gap-2 text-xs font-bold">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        匿名配送・土日配達・追跡対応
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-5xl mx-auto px-4 py-6 sm:py-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-rose-50 text-rose-700 border border-rose-200 mb-3">
+                    <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+                    <span>日本郵便・ヤマト運輸 公式配送料金改定基準完全準拠</span>
+                </div>
+                <h1 id="heroH1" class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-2">
+                    【2026年最新】ゆうゆうメルカリ便・送料＆サイズ利益計算ツール
+                </h1>
+                <p class="text-slate-600 text-xs sm:text-sm">
+                    販売価格とサイズを選ぶだけ。手数料10%と実質送料（箱代込）を自動計算し、手元に残る純利益と赤字を1秒で判定します。
+                </p>
+            </div>
+
+            <!-- Google AI Overview Source Card -->
+            <div class="max-w-3xl mx-auto mb-6 p-4 bg-white rounded-xl border border-slate-200 shadow-2xs">
+                <div class="flex items-center gap-2 mb-1">
+                    <span class="text-xs bg-rose-50 text-rose-700 font-bold px-2 py-0.5 rounded">📌 ツール概要</span>
+                    <span class="text-[11px] text-slate-400">Google AI Overview 準拠</span>
+                </div>
+                <p id="ai-summary-text" class="text-xs text-slate-600 leading-relaxed font-medium">
+                    フリマ送料Naviは、メルカリ出品者向けに「ゆうゆうメルカリ便（郵便局・ローソン・ポスト投函）」と「らくらくメルカリ便（ヤマト運輸・セブンイレブン・ファミマ）」の最新配送料金、サイズ規格、専用箱代、メルカリ販売手数料（10%）を自動計算し、手元に残る純利益と赤字ボーダーラインを1秒で判定・比較できる無料シミュレーターです。
+                </p>
+            </div>
+
+            <!-- Dwell Time Trap: Quick Preset Price Chips -->
+            <div id="dwellChips" class="max-w-3xl mx-auto mb-6 flex flex-wrap items-center justify-center gap-2 text-xs">
+                <span class="font-bold text-slate-500 text-[11px]">よく出品される価格:</span>
+                <button onclick="setPricePreset(500)" class="px-3 py-1 bg-white hover:bg-rose-50 hover:text-rose-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">500円</button>
+                <button onclick="setPricePreset(800)" class="px-3 py-1 bg-white hover:bg-rose-50 hover:text-rose-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">800円</button>
+                <button onclick="setPricePreset(1000)" class="px-3 py-1 bg-white hover:bg-rose-50 hover:text-rose-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">1,000円</button>
+                <button onclick="setPricePreset(1500)" class="px-3 py-1 bg-white hover:bg-rose-50 hover:text-rose-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">1,500円</button>
+                <button onclick="setPricePreset(2000)" class="px-3 py-1 bg-white hover:bg-rose-50 hover:text-rose-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">2,000円</button>
+                <button onclick="setPricePreset(3000)" class="px-3 py-1 bg-white hover:bg-rose-50 hover:text-rose-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">3,000円</button>
+            </div>
+
+            <!-- Calculator Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-12">
+                
+                <!-- Inputs (7 Cols) -->
+                <div class="lg:col-span-7 bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-xs space-y-5">
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-1.5">
+                            <label class="text-xs font-bold text-slate-700">出品・販売価格（円）</label>
+                            <span class="text-base font-extrabold text-rose-600 font-mono" id="priceDisplay">1,500 円</span>
+                        </div>
+                        <input type="range" id="priceSlider" min="300" max="20000" step="50" value="1500" oninput="calculate()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-rose-500">
+                        <div class="flex justify-between text-[10px] text-slate-400 mt-1 font-mono">
+                            <span>¥300（最低価格）</span>
+                            <span>¥5,000</span>
+                            <span>¥20,000</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-3 border-t border-slate-100">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">販売価格を直接入力</label>
+                                <div class="relative">
+                                    <span class="absolute left-3 top-2 text-slate-400 font-bold text-xs">¥</span>
+                                    <input type="number" id="priceInput" value="1500" min="300" step="50" oninput="syncFromInput()" class="w-full pl-7 pr-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg font-bold text-slate-900 text-sm font-mono focus:bg-white focus:ring-2 focus:ring-rose-500">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">商品の仕入れ値・原価（任意）</label>
+                                <div class="relative">
+                                    <span class="absolute left-3 top-2 text-slate-400 font-bold text-xs">¥</span>
+                                    <input type="number" id="cogsInput" value="0" min="0" step="50" oninput="calculate()" class="w-full pl-7 pr-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg font-bold text-slate-900 text-sm font-mono focus:bg-white focus:ring-2 focus:ring-rose-500">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carrier Switcher Tabs -->
+                    <div class="pt-3 border-t border-slate-100">
+                        <label class="block text-xs font-bold text-slate-700 mb-2">配送サービスを選択</label>
+                        <div id="carrierTabs" class="grid grid-cols-2 gap-3">
+                            <button id="btnYuyu" onclick="setCarrier('yuyu')" class="p-3 rounded-xl border border-indigo-200 bg-indigo-50/80 text-indigo-900 text-left transition-all">
+                                <span class="font-extrabold text-xs block flex items-center gap-1.5">
+                                    <span>📮</span> ゆうゆうメルカリ便
+                                </span>
+                                <span class="text-[10px] text-indigo-600 block mt-0.5">郵便ポスト投函・ローソン・郵便局</span>
+                            </button>
+                            <button id="btnRaku" onclick="setCarrier('raku')" class="p-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-600 text-left hover:bg-slate-100 transition-all">
+                                <span class="font-bold text-xs block flex items-center gap-1.5">
+                                    <span>🐱</span> らくらくメルカリ便
+                                </span>
+                                <span class="text-[10px] text-slate-400 block mt-0.5">ヤマト・セブン・ファミマ・PUDO</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Size / Package Selector -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1.5">荷物のサイズ・発送方法を選択</label>
+                        <select id="shippingMethodSelect" onchange="calculate()" class="w-full px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl font-bold text-slate-900 text-xs focus:bg-white focus:ring-2 focus:ring-rose-500">
+                        </select>
+                    </div>
+
+                    <!-- Quick Spec Badge Box -->
+                    <div id="serviceSpecBox" class="p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-1.5 leading-relaxed text-slate-600">
+                    </div>
+
+                </div>
+
+                <!-- Right: Outputs, Actions, PDF Print & Copy (5 Cols) -->
+                <div class="lg:col-span-5 flex flex-col gap-4">
+                    
+                    <!-- Result Card -->
+                    <div id="resultCard" class="bg-slate-900 text-white p-6 rounded-2xl shadow-sm border border-slate-800 print-card transition-all">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-rose-400">手元に残る純利益（振込額）</span>
+                        <div class="flex items-baseline gap-1 mt-1 mb-2">
+                            <span class="text-3xl sm:text-4xl font-black text-white font-mono" id="netProfitDisplay">¥1,130</span>
+                        </div>
+                        <div class="text-xs text-slate-300">
+                            利益率：約 <span id="marginDisplay" class="font-bold text-emerald-400">75.3%</span>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-slate-800 text-xs space-y-1.5 text-slate-300">
+                            <div class="flex justify-between">
+                                <span>メルカリ販売手数料（10%）：</span>
+                                <span class="font-mono font-bold text-rose-400" id="feeDisplay">-¥150</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>配送料（実質送料）：</span>
+                                <span class="font-mono font-bold text-rose-400" id="shippingDisplay">-¥220</span>
+                            </div>
+                            <div class="flex justify-between" id="boxCostRow">
+                                <span>専用箱・資材代：</span>
+                                <span class="font-mono font-bold text-slate-400" id="boxCostDisplay">¥0</span>
+                            </div>
+                            <div class="flex justify-between" id="cogsRow">
+                                <span>仕入れ・原価：</span>
+                                <span class="font-mono font-bold text-slate-400" id="cogsDisplay">-¥0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="flex flex-col gap-2">
+                        <a id="lineShareBtn" href="https://line.me/R/msg/text/?%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E9%80%81%E6%96%99%E8%A8%88%E7%AE%97%E3%83%8Tool" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#06C755] hover:bg-[#05b34c] text-white font-bold text-xs rounded-xl shadow-xs transition-all">
+                            <span>💬</span> LINEで計算結果・利益をシェア
+                        </a>
+
+                        <!-- Copy to Clipboard Button -->
+                        <button onclick="copyMercariResult()" class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-slate-100 hover:bg-slate-200 border border-slate-300 text-slate-800 font-bold text-xs rounded-xl shadow-2xs transition-all">
+                            <span>📋</span> 利益計算結果をテキストでコピー
+                        </button>
+
+                        <button onclick="window.print()" class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-bold text-xs rounded-xl shadow-2xs transition-all">
+                            <span>📄</span> 利益計算シートを印刷・PDF保存
+                        </button>
+                    </div>
+
+                    <!-- Deficit Alert Box -->
+                    <div id="deficitAlertCard" class="hidden p-5 rounded-2xl border bg-rose-100 border-rose-300 text-rose-950 text-xs leading-relaxed transition-all">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Comparison Table (早見表) -->
+            <section class="max-w-4xl mx-auto pt-6 border-t border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+                    <span>📊</span> ゆうゆうメルカリ便 vs らくらくメルカリ便 料金・サイズ早見比較表
+                </h2>
+                <div class="overflow-x-auto bg-white rounded-xl border border-slate-200 shadow-xs mb-10">
+                    <table class="w-full text-left text-xs text-slate-600">
+                        <thead class="bg-slate-50 text-slate-900 font-bold border-b border-slate-200">
+                            <tr>
+                                <th class="p-3">配送サービス</th>
+                                <th class="p-3">サイズ規格・厚さ</th>
+                                <th class="p-3">送料（税込）</th>
+                                <th class="p-3">発送場所・コンビニ</th>
+                                <th class="p-3">特徴・メリット</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 font-mono">
+                            <tr class="bg-indigo-50/40">
+                                <td class="p-3 font-bold text-indigo-900 font-sans">ゆうパケットポスト</td>
+                                <td class="p-3 font-sans">郵便ポストに入る厚さ（約3.5〜4cm / 2kg）</td>
+                                <td class="p-3 font-bold text-rose-600">¥215 <span class="text-[10px] text-slate-400 font-sans">(シール¥5)</span></td>
+                                <td class="p-3 font-sans">街の郵便ポスト投函</td>
+                                <td class="p-3 font-sans text-indigo-800 font-medium">厚さ3cm超でもポストに入れば発送可能！</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-slate-900 font-sans">ネコポス（らくらく）</td>
+                                <td class="p-3 font-sans">A4・厚さ3cm以内・1kg以内</td>
+                                <td class="p-3 font-bold text-rose-600">¥210</td>
+                                <td class="p-3 font-sans">セブン / ファミマ / ヤマト</td>
+                                <td class="p-3 font-sans">最安クラス。全国翌日配達（一部地域除く）</td>
+                            </tr>
+                            <tr class="bg-indigo-50/40">
+                                <td class="p-3 font-bold text-indigo-900 font-sans">ゆうパケットプラス</td>
+                                <td class="p-3 font-sans">24×17×厚さ7cm / 2kg</td>
+                                <td class="p-3 font-bold text-rose-600">¥455 <span class="text-[10px] text-slate-400 font-sans">(箱¥65)</span></td>
+                                <td class="p-3 font-sans">ローソン / 郵便局</td>
+                                <td class="p-3 font-sans text-indigo-800 font-medium">厚さ7cmまで対応！箱の再利用OK</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-slate-900 font-sans">宅急便コンパクト（らくらく）</td>
+                                <td class="p-3 font-sans">25×20×厚さ5cm（専用BOX）</td>
+                                <td class="p-3 font-bold text-rose-600">¥450 <span class="text-[10px] text-slate-400 font-sans">(箱¥70)</span></td>
+                                <td class="p-3 font-sans">セブン / ファミマ / ヤマト</td>
+                                <td class="p-3 font-sans">重量無制限！薄型・箱型の2種類あり</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-slate-900 font-sans">宅急便 / ゆうパック 60サイズ</td>
+                                <td class="p-3 font-sans">3辺合計60cm以内</td>
+                                <td class="p-3 font-bold text-rose-600">一律 ¥750</td>
+                                <td class="p-3 font-sans">全国のコンビニ・郵便局・ヤマト</td>
+                                <td class="p-3 font-sans">スニーカー・アウター・バッグ等</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Explanation with Contextual In-Content Keywords -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 text-slate-700 text-xs sm:text-sm space-y-4 mb-10 leading-relaxed">
+                    <h3 class="font-bold text-slate-900 text-base">ゆうゆうメルカリ便とは？知っておくべき特徴と送料の仕組み</h3>
+                    <p>
+                        <strong>ゆうゆうメルカリ便とは、メルカリと日本郵便が連携して提供する公式配送サービスです。</strong>
+                    </p>
+                    <p>
+                        出品者・購入者ともに住所や氏名を明かさずに取引できる「匿名配送」、万が一の配送事故に対する「全額補償」、荷物の現在地がリアルタイムでわかる「追跡番号」が標準搭載されています。
+                    </p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-xs text-slate-600">
+                        <li><strong>土日祝日も配達：</strong> 通常の普通郵便（手紙やハガキ）は土日祝日の配達が休止されていますが、ゆうゆうメルカリ便は土日・休日も毎日配達されます。</li>
+                        <li><strong>コンビニ受け取り対応：</strong> 購入者は自宅だけでなく、全国のローソンや郵便局、日本郵便の宅配ロッカー「はこぽす」での受け取りが指定可能です。</li>
+                        <li><strong>ポスト投函（ゆうパケットポスト）：</strong> レジに並ぶ必要がなく、専用シールを貼ってポストに投函するだけで発送が完了するため、現在メルカリで最も人気のある発送方法となっています。</li>
+                    </ul>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="space-y-3 mb-12">
+                    <h3 class="text-base font-bold text-slate-900 mb-2">よくあるご質問（FAQ）</h3>
+                    
+                    <div class="p-4 bg-white rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-xs mb-1">Q. ゆうゆうメルカリ便の送料はどこで支払いますか？</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            送料はコンビニや郵便局の窓口で現金で支払う必要はありません。商品が売れた後の「販売代金（売上金）」から自動的に差し引かれます。そのため発送時の現金支払いは一切不要です（※専用箱代や発送用シール代のみ事前購入が必要です）。
+                        </p>
+                    </div>
+
+                    <div class="p-4 bg-white rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-xs mb-1">Q. 発送後、追跡番号が反映されるまでにどれくらいかかりますか？</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            ローソンや郵便局窓口で発送した場合は数時間以内に反映されます。ゆうパケットポストで郵便ポストに投函した場合は、郵便局員によるポストの集荷作業が行われた後に追跡ステータスが「引受」へ更新されます。
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- Official Style Footer -->
+    <footer class="border-t border-slate-200 bg-white py-8 text-center text-[11px] text-slate-500">
+        <div class="max-w-5xl mx-auto px-4 space-y-2">
+            <p class="font-bold text-slate-700">フリマ送料Navi — メルカリ配送料金・販売利益計算シミュレーター</p>
+            <div class="flex justify-center gap-4 text-slate-600 font-medium my-2">
+                <a href="privacy.html" class="hover:text-rose-600">プライバシーポリシー</a>
+                <span>•</span>
+                <a href="terms.html" class="hover:text-rose-600">利用規約・免責事項</a>
+                <span>•</span>
+                <a href="contact.html" class="hover:text-rose-600">お問い合わせ</a>
+            </div>
+            <p class="text-slate-400">※当サイトは個人が運営する非公式ファンツールであり、株式会社メルカリ、日本郵便株式会社、ヤマト運輸株式会社とは提携関係にありません。</p>
+        </div>
+    </footer>
+
+    <!-- Smart PWA Mobile Install Popup Bar (Hidden by Default) -->
+    <div id="pwaInstallPrompt" class="hidden fixed bottom-4 left-4 right-4 max-w-md mx-auto bg-slate-900 text-white p-4 rounded-2xl shadow-2xl border border-slate-700 z-50 flex items-center justify-between gap-3 transition-all">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-rose-500 flex items-center justify-center text-white font-black text-base shrink-0">箱</div>
+            <div>
+                <span class="font-bold text-xs block text-white">フリマ送料Naviをアプリに追加</span>
+                <span class="text-[10px] text-slate-400 block">ホーム画面から1秒で送料計算</span>
+            </div>
+        </div>
+        <div class="flex items-center gap-1.5 shrink-0">
+            <button onclick="installPwa()" class="px-3 py-1.5 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl transition-all shadow-xs">
+                追加する 📲
+            </button>
+            <button onclick="dismissPwa()" class="text-slate-400 hover:text-white px-2 py-1 text-sm font-bold">
+                ✕
+            </button>
+        </div>
+    </div>
+
+    <!-- Smart Calculation, Shipping & Programmatic Engine -->
+    <script>
+        // PWA Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js').catch(() => {});
+        }
+
+        // PWA Smart Memory & Standalone Detection
+        let deferredPrompt;
+        const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+        const isDismissed = localStorage.getItem('furima_pwa_dismissed') === 'true';
+
+        if (!isStandalone && !isDismissed) {
+            window.addEventListener('beforeinstallprompt', (e) => {
+                e.preventDefault();
+                deferredPrompt = e;
+                const promptBox = document.getElementById('pwaInstallPrompt');
+                if (promptBox) promptBox.classList.remove('hidden');
+            });
+        }
+
+        function installPwa() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    deferredPrompt = null;
+                    localStorage.setItem('furima_pwa_dismissed', 'true');
+                    const promptBox = document.getElementById('pwaInstallPrompt');
+                    if (promptBox) promptBox.remove();
+                });
+            } else {
+                alert("【ホーム画面への追加方法】\n\n画面下部の『共有ボタン（四角から矢印のアイコン）』をタップし、メニューから『ホーム画面に追加』を選択してください📲\n次回からアプリのように1秒で起動できます！");
+            }
+        }
+
+        function dismissPwa() {
+            localStorage.setItem('furima_pwa_dismissed', 'true');
+            const promptBox = document.getElementById('pwaInstallPrompt');
+            if (promptBox) promptBox.remove();
+        }
+
+        window.addEventListener('appinstalled', () => {
+            localStorage.setItem('furima_pwa_dismissed', 'true');
+            const promptBox = document.getElementById('pwaInstallPrompt');
+            if (promptBox) promptBox.remove();
+        });
+
+        let currentCarrier = 'yuyu';
+
+        const shippingData = {
+            yuyu: [
+                {
+                    id: 'yuyu_post_sticker',
+                    name: 'ゆうパケットポスト (送料¥215 + シール¥5)',
+                    shipping: 215,
+                    boxCost: 5,
+                    spec: '郵便ポストに入る厚さ（約3.5〜4cm）/ 重さ2kgまで',
+                    location: '📮 街の郵便ポスト投函（24時間いつでもOK）',
+                    days: '🚚 お届け日数: 1〜3日（全国翌日〜翌々日・土日配達あり）'
+                },
+                {
+                    id: 'yuyu_packet',
+                    name: 'ゆうパケット (送料¥230)',
+                    shipping: 230,
+                    boxCost: 0,
+                    spec: 'A4サイズ・厚さ3cm以内 / 重さ1kgまで',
+                    location: '🏪 ローソン（Loppi・スマリ）/ 郵便局窓口',
+                    days: '🚚 お届け日数: 1〜3日（土日祝日も配達対応）'
+                },
+                {
+                    id: 'yuyu_post_mini',
+                    name: 'ゆうパケットポストmini (送料¥160 + 封筒¥20)',
+                    shipping: 160,
+                    boxCost: 20,
+                    spec: '専用封筒（21.6×17.8cm）/ 厚さポスト投函サイズ / 2kgまで',
+                    location: '📮 街の郵便ポスト投函OK（トレカ・アクセサリー向け）',
+                    days: '🚚 お届け日数: 1〜3日（土日配達あり）'
+                },
+                {
+                    id: 'yuyu_plus',
+                    name: 'ゆうパケットプラス (送料¥455 + 専用箱¥65 = ¥520)',
+                    shipping: 455,
+                    boxCost: 65,
+                    spec: '専用箱（24×17×厚さ7cm）/ 重さ2kgまで',
+                    location: '🏪 ローソン / 郵便局窓口',
+                    days: '🚚 お届け日数: 1〜3日（厚さ7cmまで対応・箱再利用可）'
+                },
+                {
+                    id: 'yuyu_pack_60',
+                    name: 'ゆうパック 60サイズ (送料¥750)',
+                    shipping: 750,
+                    boxCost: 0,
+                    spec: '3辺合計60cm以内 / 重さ25kgまで',
+                    location: '🏪 ローソン / 郵便局窓口',
+                    days: '🚚 お届け日数: 翌日〜翌々日（時間指定・補償あり）'
+                },
+                {
+                    id: 'yuyu_pack_80',
+                    name: 'ゆうパック 80サイズ (送料¥870)',
+                    shipping: 870,
+                    boxCost: 0,
+                    spec: '3辺合計80cm以内 / 重さ25kgまで',
+                    location: '🏪 ローソン / 郵便局窓口',
+                    days: '🚚 お届け日数: 翌日〜翌々日'
+                },
+                {
+                    id: 'yuyu_pack_100',
+                    name: 'ゆうパック 100サイズ (送料¥1,070)',
+                    shipping: 1070,
+                    boxCost: 0,
+                    spec: '3辺合計100cm以内 / 重さ25kgまで',
+                    location: '🏪 ローソン / 郵便局窓口',
+                    days: '🚚 お届け日数: 翌日〜翌々日'
+                }
+            ],
+            raku: [
+                {
+                    id: 'raku_nekopos',
+                    name: 'ネコポス (送料¥210)',
+                    shipping: 210,
+                    boxCost: 0,
+                    spec: 'A4サイズ（31.2×22.8cm）・厚さ3cm以内 / 重さ1kgまで',
+                    location: '🏪 セブンイレブン / ファミマ / ヤマト営業所 / PUDO',
+                    days: '🚚 お届け日数: 一部地域を除き全国翌日配達（最速）'
+                },
+                {
+                    id: 'raku_compact',
+                    name: '宅急便コンパクト (送料¥450 + 専用BOX¥70 = ¥520)',
+                    shipping: 450,
+                    boxCost: 70,
+                    spec: '専用BOX（25×20×厚さ5cm）/ 重量無制限',
+                    location: '🏪 セブンイレブン / ファミマ / ヤマト営業所 / PUDO',
+                    days: '🚚 お届け日数: 全国翌日配達（一部除く）'
+                },
+                {
+                    id: 'raku_60',
+                    name: '宅急便 60サイズ (送料¥750)',
+                    shipping: 750,
+                    boxCost: 0,
+                    spec: '3辺合計60cm以内 / 重さ2kgまで',
+                    location: '🏪 セブン / ファミマ / ヤマト営業所 / PUDO',
+                    days: '🚚 お届け日数: 翌日〜翌々日'
+                },
+                {
+                    id: 'raku_80',
+                    name: '宅急便 80サイズ (送料¥850)',
+                    shipping: 850,
+                    boxCost: 0,
+                    spec: '3辺合計80cm以内 / 重さ5kgまで',
+                    location: '🏪 セブン / ファミマ / ヤマト営業所 / PUDO',
+                    days: '🚚 お届け日数: 翌日〜翌々日'
+                },
+                {
+                    id: 'raku_100',
+                    name: '宅急便 100サイズ (送料¥1,050)',
+                    shipping: 1050,
+                    boxCost: 0,
+                    spec: '3辺合計100cm以内 / 重さ10kgまで',
+                    location: '🏪 セブン / ファミマ / ヤマト営業所 / PUDO',
+                    days: '🚚 お届け日数: 翌日〜翌々日'
+                }
+            ]
+        };
+
+        // Programmatic URL Parameter Listener
+        function handleUrlParameters() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const carrierParam = urlParams.get('carrier');
+            const priceParam = parseInt(urlParams.get('price'));
+
+            if (carrierParam === 'raku') {
+                setCarrier('raku');
+                const customTitle = "【らくらくメルカリ便】送料・サイズ・利益計算ツール｜ヤマト・セブン・ファミマ対応";
+                document.title = customTitle;
+                document.getElementById('heroH1').innerText = customTitle;
+            } else if (carrierParam === 'yuyu') {
+                setCarrier('yuyu');
+                const customTitle = "【ゆうゆうメルカリ便】送料・サイズ・利益計算ツール｜日本郵便・ローソン・ポスト投函対応";
+                document.title = customTitle;
+                document.getElementById('heroH1').innerText = customTitle;
+            }
+
+            if (priceParam && priceParam >= 300 && priceParam <= 100000) {
+                document.getElementById('priceSlider').value = priceParam;
+                document.getElementById('priceInput').value = priceParam;
+                const customTitle = `【販売価格${priceParam.toLocaleString()}円】メルカリ送料・利益計算ツール｜手取り純利益を自動判定`;
+                document.title = customTitle;
+                document.getElementById('heroH1').innerText = customTitle;
+            }
+        }
+
+        function setCarrier(carrier) {
+            currentCarrier = carrier;
+            const btnYuyu = document.getElementById('btnYuyu');
+            const btnRaku = document.getElementById('btnRaku');
+
+            if (carrier === 'yuyu') {
+                btnYuyu.className = "p-3 rounded-xl border border-indigo-200 bg-indigo-50/80 text-indigo-900 text-left transition-all";
+                btnRaku.className = "p-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-600 text-left hover:bg-slate-100 transition-all";
+            } else {
+                btnRaku.className = "p-3 rounded-xl border border-rose-200 bg-rose-50/80 text-rose-900 text-left transition-all";
+                btnYuyu.className = "p-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-600 text-left hover:bg-slate-100 transition-all";
+            }
+
+            populateMethods();
+            calculate();
+        }
+
+        function populateMethods() {
+            const select = document.getElementById('shippingMethodSelect');
+            select.innerHTML = '';
+            shippingData[currentCarrier].forEach((item, index) => {
+                const opt = document.createElement('option');
+                opt.value = index;
+                opt.innerText = item.name;
+                select.appendChild(opt);
+            });
+        }
+
+        function setPricePreset(val) {
+            document.getElementById('priceSlider').value = val;
+            document.getElementById('priceInput').value = val;
+            calculate();
+        }
+
+        function syncFromInput() {
+            const val = parseInt(document.getElementById('priceInput').value) || 300;
+            document.getElementById('priceSlider').value = val;
+            calculate();
+        }
+
+        function copyMercariResult() {
+            const price = document.getElementById('priceInput').value;
+            const profit = document.getElementById('netProfitDisplay').innerText;
+            const margin = document.getElementById('marginDisplay').innerText;
+            const shipping = document.getElementById('shippingDisplay').innerText;
+            const fee = document.getElementById('feeDisplay').innerText;
+
+            const text = `【フリマ送料Navi 計算結果】\n・販売価格：¥${parseInt(price).toLocaleString()}\n・実質送料：${shipping}\n・メルカリ手数料：${fee}\n・手元に残る純利益：${profit}（利益率：${margin}）\n\n▼ メルカリ送料・赤字判定シミュレーター\nhttps://furimaship.com/`;
+
+            navigator.clipboard.writeText(text).then(() => {
+                alert("利益計算結果をクリップボードにコピーしました！\nメモ帳や出品管理シートに貼り付けてご利用ください。");
+            });
+        }
+
+        function calculate() {
+            const price = parseInt(document.getElementById('priceSlider').value) || 300;
+            const cogs = parseInt(document.getElementById('cogsInput').value) || 0;
+            document.getElementById('priceInput').value = price;
+            document.getElementById('priceDisplay').innerText = price.toLocaleString() + ' 円';
+
+            const methodIndex = parseInt(document.getElementById('shippingMethodSelect').value) || 0;
+            const method = shippingData[currentCarrier][methodIndex] || shippingData[currentCarrier][0];
+
+            const mercariFee = Math.floor(price * 0.10);
+            const shippingFee = method.shipping;
+            const boxCost = method.boxCost;
+            const totalShipping = shippingFee + boxCost;
+
+            const netProfit = price - (mercariFee + totalShipping + cogs);
+            const margin = price > 0 ? ((netProfit / price) * 100).toFixed(1) : 0;
+
+            document.getElementById('feeDisplay').innerText = '-¥' + mercariFee.toLocaleString();
+            document.getElementById('shippingDisplay').innerText = '-¥' + shippingFee.toLocaleString();
+            document.getElementById('boxCostDisplay').innerText = boxCost > 0 ? '-¥' + boxCost.toLocaleString() : '¥0（不要）';
+            document.getElementById('cogsDisplay').innerText = cogs > 0 ? '-¥' + cogs.toLocaleString() : '-¥0';
+
+            document.getElementById('serviceSpecBox').innerHTML = `
+                <div class="font-bold text-slate-800 flex items-center gap-1.5 mb-1">
+                    <span>📏</span> 規格サイズ：${method.spec}
+                </div>
+                <div>${method.location}</div>
+                <div>${method.days}</div>
+                <div class="text-[11px] text-emerald-700 font-bold pt-1">✅ 匿名配送・追跡機能あり・メルカリ便あんしん補償つき</div>
+            `;
+
+            const resultCard = document.getElementById('resultCard');
+            const alertCard = document.getElementById('deficitAlertCard');
+
+            if (netProfit < 0) {
+                document.getElementById('netProfitDisplay').innerText = '-¥' + Math.abs(netProfit).toLocaleString();
+                document.getElementById('marginDisplay').innerText = margin + '%';
+                resultCard.className = "bg-rose-950 text-white p-6 rounded-2xl shadow-sm border border-rose-900 print-card";
+                
+                const minPriceNeeded = Math.ceil((totalShipping + cogs) / 0.90);
+                alertCard.classList.remove('hidden');
+                alertCard.innerHTML = `
+                    <span class="font-bold text-sm block mb-1">🚨【赤字警告】この設定では損（赤字）をします！</span>
+                    送料（¥${totalShipping}）と販売手数料10%（¥${mercariFee}）が売上を上回っています。<br>
+                    <strong>赤字を回避して利益を出すには、最低でも「¥${minPriceNeeded.toLocaleString()}以上」</strong>で出品してください！
+                `;
+            } else {
+                document.getElementById('netProfitDisplay').innerText = '¥' + netProfit.toLocaleString();
+                document.getElementById('marginDisplay').innerText = margin + '%';
+                resultCard.className = "bg-slate-900 text-white p-6 rounded-2xl shadow-sm border border-slate-800 print-card";
+                alertCard.classList.add('hidden');
+            }
+
+            // Dynamic LINE Share Link
+            const shareText = `メルカリ送料・利益計算ツールで試算！（販売価格¥${price.toLocaleString()}・${method.name}・純利益¥${netProfit.toLocaleString()}）`;
+            const shareUrl = `https://furimaship.com/?carrier=${currentCarrier}&price=${price}`;
+            document.getElementById('lineShareBtn').href = `https://line.me/R/msg/text/?${encodeURIComponent(shareText + '\n' + shareUrl)}`;
+        }
+
+        setCarrier('yuyu');
+        handleUrlParameters();
+    </script>
+</body>
+</html>

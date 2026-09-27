@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>フリマ送料Navi</ShortName>
+  <Description>メルカリ送料・サイズ・利益計算ツール</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="64" height="64" type="image/svg+xml">https://furimaship.com/favicon.svg</Image>
+  <Url type="text/html" template="https://furimaship.com/?price={searchTerms}"/>
+</OpenSearchDescription>

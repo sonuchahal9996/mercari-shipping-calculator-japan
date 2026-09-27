@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core -->
+  <url><loc>https://furimaship.com/</loc><priority>1.00</priority></url>
+  
+  <!-- Carrier Specific High-Volume Targets (>100K ゆうゆう & らくらく) -->
+  <url><loc>https://furimaship.com/?carrier=yuyu</loc><priority>0.95</priority></url>
+  <url><loc>https://furimaship.com/?carrier=raku</loc><priority>0.95</priority></url>
+
+  <!-- Popular Mercari Selling Price Tiers -->
+  <url><loc>https://furimaship.com/?price=300</loc><priority>0.85</priority></url>
+  <url><loc>https://furimaship.com/?price=400</loc><priority>0.80</priority></url>
+  <url><loc>https://furimaship.com/?price=500</loc><priority>0.90</priority></url>
+  <url><loc>https://furimaship.com/?price=600</loc><priority>0.80</priority></url>
+  <url><loc>https://furimaship.com/?price=700</loc><priority>0.80</priority></url>
+  <url><loc>https://furimaship.com/?price=800</loc><priority>0.90</priority></url>
+  <url><loc>https://furimaship.com/?price=900</loc><priority>0.80</priority></url>
+  <url><loc>https://furimaship.com/?price=1000</loc><priority>0.95</priority></url>
+  <url><loc>https://furimaship.com/?price=1200</loc><priority>0.85</priority></url>
+  <url><loc>https://furimaship.com/?price=1500</loc><priority>0.95</priority></url>
+  <url><loc>https://furimaship.com/?price=1800</loc><priority>0.85</priority></url>
+  <url><loc>https://furimaship.com/?price=2000</loc><priority>0.90</priority></url>
+  <url><loc>https://furimaship.com/?price=2500</loc><priority>0.85</priority></url>
+  <url><loc>https://furimaship.com/?price=3000</loc><priority>0.90</priority></url>
+  <url><loc>https://furimaship.com/?price=3500</loc><priority>0.80</priority></url>
+  <url><loc>https://furimaship.com/?price=4000</loc><priority>0.85</priority></url>
+  <url><loc>https://furimaship.com/?price=5000</loc><priority>0.90</priority></url>
+  <url><loc>https://furimaship.com/?price=7000</loc><priority>0.80</priority></url>
+  <url><loc>https://furimaship.com/?price=10000</loc><priority>0.85</priority></url>
+
+  <!-- Combined Carrier + Price Targets -->
+  <url><loc>https://furimaship.com/?carrier=yuyu&amp;price=500</loc><priority>0.85</priority></url>
+  <url><loc>https://furimaship.com/?carrier=yuyu&amp;price=800</loc><priority>0.85</priority></url>
+  <url><loc>https://furimaship.com/?carrier=yuyu&amp;price=1000</loc><priority>0.90</priority></url>
+  <url><loc>https://furimaship.com/?carrier=yuyu&amp;price=1500</loc><priority>0.90</priority></url>
+  <url><loc>https://furimaship.com/?carrier=yuyu&amp;price=2000</loc><priority>0.85</priority></url>
+  <url><loc>https://furimaship.com/?carrier=raku&amp;price=500</loc><priority>0.85</priority></url>
+  <url><loc>https://furimaship.com/?carrier=raku&amp;price=800</loc><priority>0.85</priority></url>
+  <url><loc>https://furimaship.com/?carrier=raku&amp;price=1000</loc><priority>0.90</priority></url>
+  <url><loc>https://furimaship.com/?carrier=raku&amp;price=1500</loc><priority>0.90</priority></url>
+
+  <!-- Legal Pages -->
+  <url><loc>https://furimaship.com/privacy.html</loc><priority>0.30</priority></url>
+  <url><loc>https://furimaship.com/terms.html</loc><priority>0.30</priority></url>
+  <url><loc>https://furimaship.com/contact.html</loc><priority>0.30</priority></url>
+</urlset>

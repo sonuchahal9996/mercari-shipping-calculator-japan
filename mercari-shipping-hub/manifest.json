@@ -1,0 +1,16 @@
+{
+  "name": "フリマ送料Navi - メルカリ送料・利益計算ツール",
+  "short_name": "送料Navi",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f43f5e",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
